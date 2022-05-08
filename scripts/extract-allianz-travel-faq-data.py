@@ -4,7 +4,13 @@ from urllib.request import urlopen
 import pandas as pd
 import json
 
-url = "https://www.allianz-travel.ch/en_CH/services/faq.html"
+# DE: https://www.allianz-travel.ch/de_CH/services/faq.html
+# EN: https://www.allianz-travel.ch/en_CH/services/faq.html
+# FR: https://www.allianz-travel.ch/fr_CH/services/faq.html
+# IT: https://www.allianz-travel.ch/it_CH/services/faq.html
+
+lang = "de"  # "en", "fr", "it"
+url = "https://www.allianz-travel.ch/" + lang + "_CH/services/faq.html"
 
 page = urlopen(url)
 html_bytes = page.read()
@@ -27,9 +33,14 @@ for e in soup.find_all("div", class_="c-accordion__item-wrapper"):
     answer = answer.strip()
 
     dataset.append({
-        "question": quesiton,
-        "answer": answer
+        "Question": quesiton,
+        "Answer": answer
     })
 
-with open('../dataset/allianz-travel-faq.json', 'w') as f:
-    json.dump(dataset, f, indent=2)
+jsonFile = {
+    "SchemaVersion": 1,
+    "FaqDocuments": dataset
+}
+
+with open('../dataset/allianz-travel-faq-' + lang + '-kendra.json', 'w') as f:
+    json.dump(jsonFile, f, indent=2)
