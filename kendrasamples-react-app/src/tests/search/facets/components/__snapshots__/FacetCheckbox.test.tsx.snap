@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A <FacetCheckbox /> renders correctly 1`] = `
+<div
+  className="facet-checkbox"
+>
+  <FormCheck
+    checked={false}
+    disabled={false}
+    inline={false}
+    isInvalid={false}
+    isValid={false}
+    label={
+      <span
+        onClick={[Function]}
+      >
+        <span>
+          mockStringValue1
+           (
+          5
+          )
+        </span>
+      </span>
+    }
+    onChange={[Function]}
+    title=""
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`A <FacetCheckbox /> renders disable not selected correctly 1`] = `
+<div
+  className="facet-checkbox"
+>
+  <FormCheck
+    checked={false}
+    disabled={true}
+    inline={false}
+    isInvalid={false}
+    isValid={false}
+    label={
+      <span
+        onClick={[Function]}
+      >
+        <span>
+          mockStringValue1
+           (
+          5
+          )
+        </span>
+      </span>
+    }
+    onChange={[Function]}
+    title=""
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`A <FacetCheckbox /> renders disableAdd selected correctly 1`] = `
+<div
+  className="facet-checkbox"
+>
+  <FormCheck
+    checked={true}
+    disabled={false}
+    inline={false}
+    isInvalid={false}
+    isValid={false}
+    label={
+      <span
+        onClick={[Function]}
+      >
+        <span>
+          mockStringValue1
+           (
+          5
+          )
+        </span>
+      </span>
+    }
+    onChange={[Function]}
+    title=""
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`A <FacetCheckbox /> renders without count correctly 1`] = `
+<div
+  className="facet-checkbox"
+>
+  <FormCheck
+    checked={false}
+    disabled={false}
+    inline={false}
+    isInvalid={false}
+    isValid={false}
+    label={
+      <span
+        onClick={[Function]}
+      >
+        mockStringValue1
+      </span>
+    }
+    onChange={[Function]}
+    title=""
+    type="checkbox"
+  />
+</div>
+`;

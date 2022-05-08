@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A <DateFacet /> Renders correctly 1`] = `
+<div
+  className="facet"
+>
+  <div
+    className="facet-title"
+  >
+    mockDateFacet
+     
+  </div>
+  <div
+    className="facet-date-container"
+  >
+    <div
+      className="facet-heuristic-chart"
+    >
+      <DateFacetHeuristicChart
+        availableDateFacet={
+          Object {
+            "maxYear": 2020,
+            "minYear": 2019,
+            "yearHeuristic": Object {
+              "2019": 20,
+              "2020": 10,
+            },
+          }
+        }
+        displaySelectionRange={
+          Array [
+            2019,
+            2020,
+          ]
+        }
+        fullRange={
+          Array [
+            2019,
+            2020,
+          ]
+        }
+      />
+    </div>
+    <ComponentEnhancer(Range)
+      activeDotStyle={Object {}}
+      allowCross={false}
+      ariaLabelGroupForHandles={Array []}
+      ariaLabelledByGroupForHandles={Array []}
+      ariaValueTextFormatterGroupForHandles={Array []}
+      className=""
+      count={1}
+      disabled={false}
+      dotStyle={Object {}}
+      dots={false}
+      handle={[Function]}
+      handleStyle={
+        Array [
+          Object {},
+        ]
+      }
+      included={true}
+      marks={Object {}}
+      max={2020}
+      min={2018}
+      onAfterChange={[Function]}
+      onBeforeChange={[Function]}
+      onChange={[Function]}
+      prefixCls="rc-slider"
+      pushable={1}
+      railStyle={Object {}}
+      reverse={false}
+      step={1}
+      tabIndex={Array []}
+      trackStyle={
+        Array [
+          Object {},
+        ]
+      }
+      value={
+        Array [
+          2018,
+          2020,
+        ]
+      }
+      vertical={false}
+    />
+    <div>
+      <div
+        className="facet-date-label-left"
+      >
+        2019
+      </div>
+      <div
+        className="facet-date-label-right"
+      >
+        2020
+      </div>
+    </div>
+  </div>
+</div>
+`;

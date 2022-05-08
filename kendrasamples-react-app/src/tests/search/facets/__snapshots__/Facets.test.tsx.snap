@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A <Facets /> Renders correctly when no available facets, but some facet is selected 1`] = `
+<div
+  className="facets"
+>
+  <div
+    className="facet"
+  >
+    <span
+      className="action-link"
+      onClick={[Function]}
+    >
+      Reset filters
+    </span>
+  </div>
+</div>
+`;
+
+exports[`A <Facets /> renders correctly when doesn't have index 1`] = `""`;
+
+exports[`A <Facets /> renders correctly when doesn't have query result 1`] = `""`;
+
+exports[`A <Facets /> renders data source id correctly when data source lookup not provided 1`] = `
+<div
+  className="facets"
+>
+  <div
+    className="facet-panel-header"
+    onClick={[Function]}
+  >
+    <div
+      className="facet-panel-icon"
+    >
+      <img
+        alt="facet"
+        src="facet_icon.svg"
+      />
+    </div>
+    Filter search results
+    <div
+      className="facet-panel-expand-icon"
+    >
+      <img
+        alt="open"
+        src="solid-down.svg"
+      />
+    </div>
+  </div>
+  <DataSourceFacet
+    disableAdd={true}
+    facetConfiguration={
+      Object {
+        "facetPanelDefaultOpen": false,
+        "facetsToShowWhenUncollapsed": 5,
+        "maxSelectedFacets": 5,
+        "showCount": true,
+        "updateAvailableFacetsWhenFilterChange": true,
+      }
+    }
+    key="_data_source_id"
+    onClear={[Function]}
+    onSelectionChange={[Function]}
+    selectedFacets={
+      SelectedFacetManager {
+        "dateRangeMap": Object {},
+        "selectAttributeFilterForAttributeList": [Function],
+        "selectDateAttributeFilter": [Function],
+        "selectLongAttributeFilter": [Function],
+        "selectStringListAttributeFilter": [Function],
+        "stringMap": Object {},
+      }
+    }
+    valueCountPairs={
+      Array [
+        Object {
+          "Count": 10,
+          "DocumentAttributeValue": Object {
+            "StringValue": "mock-data-source-id",
+          },
+        },
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`A <Facets /> renders data source id correctly when data source lookup provided 1`] = `
+<div
+  className="facets"
+>
+  <div
+    className="facet-panel-header"
+    onClick={[Function]}
+  >
+    <div
+      className="facet-panel-icon"
+    >
+      <img
+        alt="facet"
+        src="facet_icon.svg"
+      />
+    </div>
+    Filter search results
+    <div
+      className="facet-panel-expand-icon"
+    >
+      <img
+        alt="open"
+        src="solid-down.svg"
+      />
+    </div>
+  </div>
+  <DataSourceFacet
+    dataSourceNameLookup={
+      Object {
+        "mock-data-source-id": "MockDataSourceName",
+      }
+    }
+    disableAdd={true}
+    facetConfiguration={
+      Object {
+        "facetPanelDefaultOpen": false,
+        "facetsToShowWhenUncollapsed": 5,
+        "maxSelectedFacets": 5,
+        "showCount": true,
+        "updateAvailableFacetsWhenFilterChange": true,
+      }
+    }
+    key="_data_source_id"
+    onClear={[Function]}
+    onSelectionChange={[Function]}
+    selectedFacets={
+      SelectedFacetManager {
+        "dateRangeMap": Object {},
+        "selectAttributeFilterForAttributeList": [Function],
+        "selectDateAttributeFilter": [Function],
+        "selectLongAttributeFilter": [Function],
+        "selectStringListAttributeFilter": [Function],
+        "stringMap": Object {},
+      }
+    }
+    valueCountPairs={
+      Array [
+        Object {
+          "Count": 10,
+          "DocumentAttributeValue": Object {
+            "StringValue": "mock-data-source-id",
+          },
+        },
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`A <Facets /> renders date value correctly 1`] = `
+<div
+  className="facets"
+>
+  <div
+    className="facet-panel-header"
+    onClick={[Function]}
+  >
+    <div
+      className="facet-panel-icon"
+    >
+      <img
+        alt="facet"
+        src="facet_icon.svg"
+      />
+    </div>
+    Filter search results
+    <div
+      className="facet-panel-expand-icon"
+    >
+      <img
+        alt="open"
+        src="solid-down.svg"
+      />
+    </div>
+  </div>
+  <DateFacet
+    attributeName="mockDateAttributeName"
+    disableAdd={true}
+    key="mockDateAttributeName"
+    onSelectionsChange={[Function]}
+    valueCountPairs={
+      Array [
+        Object {
+          "Count": 10,
+          "DocumentAttributeValue": Object {
+            "StringValue": "2020-03-27T14:33:14.000Z",
+          },
+        },
+        Object {
+          "Count": 20,
+          "DocumentAttributeValue": Object {
+            "StringValue": "2019-03-26T14:33:14.000Z",
+          },
+        },
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`A <Facets /> renders multiple values correctly 1`] = `
+<div
+  className="facets"
+>
+  <div
+    className="facet-panel-header"
+    onClick={[Function]}
+  >
+    <div
+      className="facet-panel-icon"
+    >
+      <img
+        alt="facet"
+        src="facet_icon.svg"
+      />
+    </div>
+    Filter search results
+    <div
+      className="facet-panel-expand-icon"
+    >
+      <img
+        alt="open"
+        src="solid-down.svg"
+      />
+    </div>
+  </div>
+  <StringFacet
+    attributeName="mockString1AttributeName"
+    disableAdd={true}
+    facetConfiguration={
+      Object {
+        "facetPanelDefaultOpen": false,
+        "facetsToShowWhenUncollapsed": 5,
+        "maxSelectedFacets": 5,
+        "showCount": true,
+        "updateAvailableFacetsWhenFilterChange": true,
+      }
+    }
+    key="mockString1AttributeName"
+    onClear={[Function]}
+    onSelectionChange={[Function]}
+    selectedFacets={
+      SelectedFacetManager {
+        "dateRangeMap": Object {},
+        "selectAttributeFilterForAttributeList": [Function],
+        "selectDateAttributeFilter": [Function],
+        "selectLongAttributeFilter": [Function],
+        "selectStringListAttributeFilter": [Function],
+        "stringMap": Object {},
+      }
+    }
+    valueCountPairs={
+      Array [
+        Object {
+          "Count": 10,
+          "DocumentAttributeValue": Object {
+            "StringValue": "mockStringValue1",
+          },
+        },
+        Object {
+          "Count": 20,
+          "DocumentAttributeValue": Object {
+            "StringValue": "mockStringValue2",
+          },
+        },
+      ]
+    }
+  />
+  <StringFacet
+    attributeName="mockStringAttribute2Name"
+    disableAdd={true}
+    facetConfiguration={
+      Object {
+        "facetPanelDefaultOpen": false,
+        "facetsToShowWhenUncollapsed": 5,
+        "maxSelectedFacets": 5,
+        "showCount": true,
+        "updateAvailableFacetsWhenFilterChange": true,
+      }
+    }
+    key="mockStringAttribute2Name"
+    onClear={[Function]}
+    onSelectionChange={[Function]}
+    selectedFacets={
+      SelectedFacetManager {
+        "dateRangeMap": Object {},
+        "selectAttributeFilterForAttributeList": [Function],
+        "selectDateAttributeFilter": [Function],
+        "selectLongAttributeFilter": [Function],
+        "selectStringListAttributeFilter": [Function],
+        "stringMap": Object {},
+      }
+    }
+    valueCountPairs={
+      Array [
+        Object {
+          "Count": 10,
+          "DocumentAttributeValue": Object {
+            "StringValue": "mockStringValue1",
+          },
+        },
+        Object {
+          "Count": 20,
+          "DocumentAttributeValue": Object {
+            "StringValue": "mockStringValue2",
+          },
+        },
+      ]
+    }
+  />
+  <DateFacet
+    attributeName="mockDateAttributeName"
+    disableAdd={true}
+    key="mockDateAttributeName"
+    onSelectionsChange={[Function]}
+    valueCountPairs={
+      Array [
+        Object {
+          "Count": 10,
+          "DocumentAttributeValue": Object {
+            "StringValue": "2020-03-27T14:33:14.000Z",
+          },
+        },
+        Object {
+          "Count": 20,
+          "DocumentAttributeValue": Object {
+            "StringValue": "2019-03-26T14:33:14.000Z",
+          },
+        },
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`A <Facets /> renders string value correctly 1`] = `
+<div
+  className="facets"
+>
+  <div
+    className="facet-panel-header"
+    onClick={[Function]}
+  >
+    <div
+      className="facet-panel-icon"
+    >
+      <img
+        alt="facet"
+        src="facet_icon.svg"
+      />
+    </div>
+    Filter search results
+    <div
+      className="facet-panel-expand-icon"
+    >
+      <img
+        alt="open"
+        src="solid-down.svg"
+      />
+    </div>
+  </div>
+  <StringFacet
+    attributeName="mockAttributeName"
+    disableAdd={true}
+    facetConfiguration={
+      Object {
+        "facetPanelDefaultOpen": false,
+        "facetsToShowWhenUncollapsed": 5,
+        "maxSelectedFacets": 5,
+        "showCount": true,
+        "updateAvailableFacetsWhenFilterChange": true,
+      }
+    }
+    key="mockAttributeName"
+    onClear={[Function]}
+    onSelectionChange={[Function]}
+    selectedFacets={
+      SelectedFacetManager {
+        "dateRangeMap": Object {},
+        "selectAttributeFilterForAttributeList": [Function],
+        "selectDateAttributeFilter": [Function],
+        "selectLongAttributeFilter": [Function],
+        "selectStringListAttributeFilter": [Function],
+        "stringMap": Object {},
+      }
+    }
+    valueCountPairs={
+      Array [
+        Object {
+          "Count": 10,
+          "DocumentAttributeValue": Object {
+            "StringValue": "mockStringValue1",
+          },
+        },
+        Object {
+          "Count": 20,
+          "DocumentAttributeValue": Object {
+            "StringValue": "mockStringValue2",
+          },
+        },
+      ]
+    }
+  />
+</div>
+`;

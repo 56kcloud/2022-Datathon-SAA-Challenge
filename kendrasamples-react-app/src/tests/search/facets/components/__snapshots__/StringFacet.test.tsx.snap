@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A <StringFacet /> renders correctly 1`] = `
+<Facet
+  attributeName="mockAttributeName"
+  disableAdd={false}
+  facetConfiguration={
+    Object {
+      "facetsToShowWhenUncollapsed": 5,
+      "showCount": true,
+    }
+  }
+  onClear={[Function]}
+  onSelectionChange={[Function]}
+  values={
+    Array [
+      Object {
+        "Count": 10,
+        "DocumentAttributeValue": Object {
+          "StringValue": "mockStringValue1",
+        },
+        "ValueLabel": "mockStringValue1",
+      },
+      Object {
+        "Count": 20,
+        "DocumentAttributeValue": Object {
+          "StringValue": "mockStringValue2",
+        },
+        "ValueLabel": "mockStringValue2",
+      },
+    ]
+  }
+/>
+`;

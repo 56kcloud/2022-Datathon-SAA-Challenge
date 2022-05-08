@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A <DateFacetHeuristicChart /> Renders correctly 1`] = `
+<Chart
+  chartActions={null}
+  chartEvents={null}
+  chartType="ColumnChart"
+  chartWrapperParams={Object {}}
+  className=""
+  columns={null}
+  controls={null}
+  data={
+    Array [
+      Array [
+        Object {
+          "type": "string",
+        },
+        "Values",
+        Object {
+          "role": "style",
+        },
+      ],
+      Array [
+        "2018",
+        5,
+        "color: #d5dbdb",
+      ],
+      Array [
+        "2019",
+        0,
+        "color: #007bff",
+      ],
+      Array [
+        "2020",
+        10,
+        "color: #007bff",
+      ],
+    ]
+  }
+  diffdata={null}
+  formatters={null}
+  getChartEditor={null}
+  getChartWrapper={[Function]}
+  graphID={null}
+  graph_id={null}
+  height="75px"
+  legendToggle={false}
+  legend_toggle={false}
+  options={
+    Object {
+      "bar": Object {
+        "groupWidth": "90%",
+      },
+      "chartArea": Object {
+        "width": "100%",
+      },
+      "focusTarget": "category",
+      "hAxis": Object {
+        "baselineColor": "transparent",
+        "gridlines": Object {
+          "color": "transparent",
+        },
+        "textPosition": "none",
+      },
+      "legend": Object {
+        "position": "none",
+      },
+      "tooltip": Object {
+        "isHtml": true,
+        "showColorCode": false,
+      },
+      "vAxis": Object {
+        "baselineColor": "transparent",
+        "gridlines": Object {
+          "color": "transparent",
+        },
+        "textPosition": "none",
+      },
+    }
+  }
+  render={null}
+  rootProps={Object {}}
+  rows={null}
+  spreadSheetQueryParameters={
+    Object {
+      "gid": 1,
+      "headers": 1,
+    }
+  }
+  spreadSheetUrl={null}
+  style={Object {}}
+  toolbarID={null}
+  toolbarItems={null}
+  width="100%"
+/>
+`;

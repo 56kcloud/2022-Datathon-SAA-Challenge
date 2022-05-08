@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A <Facet /> renders _source_uri correctly 1`] = `
+<div
+  className="facet"
+>
+  <div
+    className="facet-title"
+  >
+    Source URI
+     
+  </div>
+  <div
+    className="facet-value-container"
+  >
+    <FacetCheckbox
+      attributeName="_source_uri"
+      count={10}
+      disableAdd={false}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 5,
+          "showCount": true,
+        }
+      }
+      key="0"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue1",
+        }
+      }
+      valueLabel="mockStringValue1"
+    />
+    <FacetCheckbox
+      attributeName="_source_uri"
+      count={20}
+      disableAdd={false}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 5,
+          "showCount": true,
+        }
+      }
+      key="1"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue2",
+        }
+      }
+      valueLabel="mockStringValue2"
+    />
+  </div>
+  <div
+    className="facet-footer"
+  />
+</div>
+`;
+
+exports[`A <Facet /> renders collapsed correctly 1`] = `
+<div
+  className="facet"
+>
+  <div
+    className="facet-title"
+  >
+    mockAttributeName
+     
+  </div>
+  <div
+    className="facet-value-container"
+  >
+    <FacetCheckbox
+      attributeName="mockAttributeName"
+      count={10}
+      disableAdd={false}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 1,
+          "showCount": true,
+        }
+      }
+      key="0"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue1",
+        }
+      }
+      valueLabel="mockStringValue1"
+    />
+  </div>
+  <div
+    className="facet-footer"
+  >
+    <span
+      className="action-link"
+      onClick={[Function]}
+    >
+      Show more...
+    </span>
+  </div>
+</div>
+`;
+
+exports[`A <Facet /> renders correctly 1`] = `
+<div
+  className="facet"
+>
+  <div
+    className="facet-title"
+  >
+    mockAttributeName
+     
+  </div>
+  <div
+    className="facet-value-container"
+  >
+    <FacetCheckbox
+      attributeName="mockAttributeName"
+      count={10}
+      disableAdd={false}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 5,
+          "showCount": true,
+        }
+      }
+      key="0"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue1",
+        }
+      }
+      valueLabel="mockStringValue1"
+    />
+    <FacetCheckbox
+      attributeName="mockAttributeName"
+      count={20}
+      disableAdd={false}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 5,
+          "showCount": true,
+        }
+      }
+      key="1"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue2",
+        }
+      }
+      valueLabel="mockStringValue2"
+    />
+  </div>
+  <div
+    className="facet-footer"
+  />
+</div>
+`;
+
+exports[`A <Facet /> renders correctly if disableAdd 1`] = `
+<div
+  className="facet"
+>
+  <div
+    className="facet-title"
+  >
+    mockAttributeName
+     
+  </div>
+  <div
+    className="facet-value-container"
+  >
+    <FacetCheckbox
+      attributeName="mockAttributeName"
+      count={10}
+      disableAdd={true}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 5,
+          "showCount": true,
+        }
+      }
+      key="0"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue1",
+        }
+      }
+      valueLabel="mockStringValue1"
+    />
+    <FacetCheckbox
+      attributeName="mockAttributeName"
+      count={20}
+      disableAdd={true}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 5,
+          "showCount": true,
+        }
+      }
+      key="1"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue2",
+        }
+      }
+      valueLabel="mockStringValue2"
+    />
+  </div>
+  <div
+    className="facet-footer"
+  />
+</div>
+`;
+
+exports[`A <Facet /> renders count hidden correctly 1`] = `
+<div
+  className="facet"
+>
+  <div
+    className="facet-title"
+  >
+    mockAttributeName
+     
+  </div>
+  <div
+    className="facet-value-container"
+  >
+    <FacetCheckbox
+      attributeName="mockAttributeName"
+      count={10}
+      disableAdd={false}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 5,
+          "showCount": false,
+        }
+      }
+      key="0"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue1",
+        }
+      }
+      valueLabel="mockStringValue1"
+    />
+    <FacetCheckbox
+      attributeName="mockAttributeName"
+      count={20}
+      disableAdd={false}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 5,
+          "showCount": false,
+        }
+      }
+      key="1"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue2",
+        }
+      }
+      valueLabel="mockStringValue2"
+    />
+  </div>
+  <div
+    className="facet-footer"
+  />
+</div>
+`;
+
+exports[`A <Facet /> renders expanded correctly 1`] = `
+<div
+  className="facet"
+>
+  <div
+    className="facet-title"
+  >
+    mockAttributeName
+     
+  </div>
+  <div
+    className="facet-value-container"
+  >
+    <FacetCheckbox
+      attributeName="mockAttributeName"
+      count={10}
+      disableAdd={false}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 1,
+          "showCount": true,
+        }
+      }
+      key="0"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue1",
+        }
+      }
+      valueLabel="mockStringValue1"
+    />
+    <FacetCheckbox
+      attributeName="mockAttributeName"
+      count={20}
+      disableAdd={false}
+      facetConfiguration={
+        Object {
+          "facetsToShowWhenUncollapsed": 1,
+          "showCount": true,
+        }
+      }
+      key="1"
+      onSelectionChange={[Function]}
+      selected={false}
+      value={
+        Object {
+          "StringValue": "mockStringValue2",
+        }
+      }
+      valueLabel="mockStringValue2"
+    />
+  </div>
+  <div
+    className="facet-footer"
+  >
+    <span
+      className="action-link"
+      onClick={[Function]}
+    >
+      Show less...
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A <DataSourceFacet /> renders correctly when data source lookup not provided 1`] = `""`;
+
+exports[`A <DataSourceFacet /> renders correctly when data source lookup provided 1`] = `
+<Facet
+  attributeName="_data_source_id"
+  disableAdd={false}
+  facetConfiguration={
+    Object {
+      "facetsToShowWhenUncollapsed": 5,
+      "showCount": true,
+    }
+  }
+  onClear={[Function]}
+  onSelectionChange={[Function]}
+  values={
+    Array [
+      Object {
+        "Count": 10,
+        "DocumentAttributeValue": Object {
+          "StringValue": "mock-data-source-id",
+        },
+        "ValueLabel": "MockDataSourceName",
+      },
+    ]
+  }
+/>
+`;
