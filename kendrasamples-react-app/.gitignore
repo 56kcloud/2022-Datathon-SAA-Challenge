@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # App specific files
-./src/services/local-dev-credentials.json
+src/services/local-dev-credentials.json
