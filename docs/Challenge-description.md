@@ -10,7 +10,7 @@ insurance. Especially in Covid-19 times travel insurance could become extra
 valuable. However, in specific situations it’s often unclear what is covered and
 what isn’t. We want to get our specific questions answered conveniently and
 don’t want to work through the policy terms and conditions. Calling or writing
-an insurance company often ends up in significant waiting times, especially in
+an insurance company often ends up in significant waiting times. Especially in
 times where help centers are particularly busy. A Q&A Bot is the right answer
 because it gives customers instant answers and at the same time saves resources
 of insurance help centers.
@@ -26,8 +26,8 @@ Together with your team members, you will
 1. An AWS Q&A Bot template including a “Hello World”
 1. 60’ intro session in AWS Q&A Bot technologies
 1. Mentors and experts assisting you in AWS Q&A Bot technologies
-1. Real-world written Q&A [./dataset](./dataset/)
+1. Real-world written FAQs [dataset](./../dataset/)
 
-### Additinal Resources
+### Additional Resources
 1. [Federal Office of Public Health
 information](https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html)

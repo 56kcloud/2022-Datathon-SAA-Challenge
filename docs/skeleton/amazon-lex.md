@@ -13,7 +13,6 @@ Here the first step is to create a bot. Please ensure that you are on the **Lex
 V2 console**, which should already be the default.
 
 ## Create the bot
-
 1. Click on *Create bot*
 1. *Configure bot settings* step
    * Select **Create a blank bot**
@@ -37,7 +36,7 @@ default intent. You can use the UI to which you are redirected to create this
 default intent.
 1. Intent details
    * Change the **Intent name**: DefaultIntent
-1. Sample ututerances
+1. Sample utterances
    * **Add utterance**: "Hello Data Days 2022"
 1. Closing responses
    * Message: "Happy to see you participating in the SAA Q&A Bot Challenge"
@@ -47,7 +46,7 @@ default intent.
    button on the bottom
 
 ### Link Bot to Kendra
-After you have successfully creatd the default intent, we link the *English
+After you have successfully created the default intent, we link the *English
 (US)* language to the Kendra index.
 
 1. Go to the **Intents** overview page

@@ -1,4 +1,4 @@
-# Travelling in Covid-19 times: The Q&A Bot on travel insurance
+# Traveling in Covid-19 times: The Q&A Bot on travel insurance
 
 ![Challenge Logo](./docs/images/challenge-logo.png)
 
@@ -22,15 +22,15 @@ this business problem. This challenge from the Swiss Association of Actuaries
 more transparent? Do you want to have more convenient travel planning? Then sign
 up for the SAA Q&A Bot Challenge.
 
-# Repository Structure
+## Repository Structure
 The structure of this repository is as follows:
 ## **docs** folder
 This folder contains the documentation and instructions on how to get started
 with the challenge
 
-  * [Challenge Description](./docs/Challenge-description.md)
-  * [AWS Account Creation](./docs/Aws-Account.md)
-  * [Skeleton Implementation](./docs/Skeleton-Implementation.md)
+* [Challenge Description](./docs/Challenge-description.md)
+* [AWS Account Creation](./docs/Aws-Account.md)
+* [Skeleton Implementation](./docs/Skeleton-Implementation.md)
 
 ## **dataset** folder
 The skeleton implementation is built upon the [Allianz Travel
