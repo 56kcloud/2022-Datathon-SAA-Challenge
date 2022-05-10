@@ -2,7 +2,7 @@
 
 ![Challenge Logo](./docs/images/challenge-logo.png)
 
-The [Swiss Association of Actuaries (SAV)](https://www.actuaries.ch/) is a Gold
+The [Swiss Association of Actuaries (SAA)](https://www.actuaries.ch/) is a Gold
 Sponsor of the [Data Days 2022](https://datadays.ch). As part of this sponsoring
 a challenge is proposed to let the participants work on an impactful task within
 the insurance industry.
