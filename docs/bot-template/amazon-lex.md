@@ -1,4 +1,4 @@
-# Amazon Lex
+# Setup Amazon Lex
 [Amazon Lex](https://aws.amazon.com/lex/) is an AI powered Chat bot service.
 This allows us to make the FAQs available via chat.
 
@@ -71,5 +71,5 @@ Now you have successfully created an Amazon Lex bot and connected it to the
 previously created Kendra index.
 
 ## Next Step: Connect Amazon to Slack
-The last step is to connect Amazon Lex to Slack. To set this up head over to
-[Connect Slack](./slack.md).
+The last step is to connect Amazon Lex to Slack. To set this up head over to the
+[Setup Slack section](./slack.md).

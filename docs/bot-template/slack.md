@@ -1,4 +1,4 @@
-# Slack
+# Setup Slack
 To test the default Q&A Bot implementation, you can use the [Amazon Lex
 integration with
 Slack](https://docs.aws.amazon.com/lex/latest/dg/slack-bot-association.html).
@@ -34,4 +34,4 @@ Workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
      * Hello Data Days 2022
      * Travel Hotline
 
-You have now successfully setup the skeleton implementation. Congrats 🚀
+You have now successfully setup the Q&A Bot Template. Congrats 🚀

@@ -1,4 +1,4 @@
-# Amazon Kendra
+# Setup Amazon Kendra
 [Amazon Kendra](https://aws.amazon.com/kendra/) is an intelligent search service
 powered by Machine Learning (ML). In this template implementation we use the
 Kendra FAQ feature. This allows us to search the Allianz Travel FAQs.
@@ -33,7 +33,11 @@ After uploading the FAQ datasets, we need to create the Amazon Kendra Service.
 last step
 
 After the successful creation of the index, you get redirected to the index home
-page. The last step on the Kendra configuration is then to add the FAQs. You
+page.
+
+TODO: Make a better transition here
+
+The last step on the Kendra configuration is then to add the FAQs. You
 have to repeat this step for both datasets:
 * `allianz-travel-faq-de-kendra.json`
 * `allianz-travel-faq-en-kendra.json`
@@ -57,4 +61,4 @@ Creating the FAQs can take some time. You don't have to wait until they are
 ## Next Step: Create Amazon Lex Bot
 Now that we have the FAQs indexed in Amazon Kendra, we need to create the Amazon
 Lex Bot and connect it to the FAQs. You will find the steps in the [Amazon
-Lex](./amazon-lex.md) section.
+Lex section](./amazon-lex.md).

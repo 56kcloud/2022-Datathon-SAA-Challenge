@@ -8,7 +8,8 @@ a challenge is proposed to let the participants work on an impactful task within
 the insurance industry.
 
 This repository contains all the material that is needed in order for you to
-work on the challenge. Further down, you can find more information about the structure of the repository.
+work on the challenge. Further down, you can find more information about the
+structure of the repository.
 
 ## Help insurers make your travels fun again!
 Are you planning your next vacation yet? Due to the Covid pandemic, people are
@@ -30,11 +31,14 @@ with the challenge
 
 * [Challenge Description](./docs/Challenge-description.md)
 * [AWS Account Creation](./docs/Aws-Account.md)
-* [Skeleton Implementation](./docs/Skeleton-Implementation.md)
+* [Q&A Bot Template](./docs/Bot-tempalte.md)
 
 ## **dataset** folder
-The skeleton implementation is built upon the [Allianz Travel
-FAQ](https://www.allianz-travel.ch/en_CH/services/faq.html). In the dataset folder you will find the english and german version of the dataset. Both in a `json` version that is compatible with the Amazon Kendra FAQ model. And the prettified html version.
+The Q&A Bot Template implementation is built upon the [Allianz Travel
+FAQ](https://www.allianz-travel.ch/en_CH/services/faq.html). In the dataset
+folder you will find the english and german version of the dataset. Both in a
+`json` version that is compatible with the Amazon Kendra FAQ model. And the
+prettified html version.
 
 TODO: Add german html
 

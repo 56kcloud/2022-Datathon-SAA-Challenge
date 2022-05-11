@@ -1,11 +1,14 @@
-# The Skeleton Implementation
+# The Q&A Bot Template
 Setting up the initial infrastructure for such a task can be quite daunting.
 Therefore, the following instructions will help you setup the initial services.
 
-The skeleton implementation consists of three components:
+The Q&A Bot Template consists of three components:
 * A Slack Workspace
 * Amazon Lex
 * Amazon Kendra
+  * Amazon S3 to store the FAQ datasets
+
+![Template Architecture](./images/template-architecture.png)
 
 **Note:** The Amazon Kendra service, is not supported in all regions. Therefore,
 you should select on of the supported regions. We recommend using the **EU
@@ -16,9 +19,8 @@ as follows:
 * **AWS Management Console access:** Select the region in the top right corner
 
 In the following sections, you will find all the information that is needed to
-setup the skeleton implementation. This will be done in the opposite order, than
-listed above.
+deploy the template. This will be done in the opposite order, than listed above.
 
-## First Step
-The first step is to setup an Amazon Kendra Index. So head over to the [Amazon
-Kendra](./skeleton/amazon-kendra.md) section and get started.
+1. [Setup Amazon Kendra](./bot-template/amazon-kendra.md)
+1. [Setup Amazon Lex](./bot-template/amazon-lex.md)
+1. [Setup Slack](./bot-template/slack.md)
