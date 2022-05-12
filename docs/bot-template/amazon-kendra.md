@@ -39,8 +39,8 @@ TODO: Make a better transition here
 
 The last step on the Kendra configuration is then to add the FAQs. You
 have to repeat this step for both datasets:
-* `allianz-travel-faq-de-kendra.json`
-* `allianz-travel-faq-en-kendra.json`
+* `allianz-ch-travel-faq-de-kendra.json`
+* `allianz-ch-travel-faq-en-kendra.json`
 
 While adding the FAQ please make sure to select the correct language for the
 file you have selected.

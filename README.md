@@ -31,7 +31,7 @@ with the challenge
 
 * [Challenge Description](./docs/Challenge-description.md)
 * [AWS Account Creation](./docs/Aws-Account.md)
-* [Q&A Bot Template](./docs/Bot-tempalte.md)
+* [Q&A Bot Template](./docs/Bot-template.md)
 
 ## **dataset** folder
 The Q&A Bot Template implementation is built upon the [Allianz Travel

@@ -1,7 +1,5 @@
-import string
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
-import pandas as pd
 import json
 
 # DE: https://www.allianz-travel.ch/de_CH/services/faq.html
@@ -42,5 +40,5 @@ jsonFile = {
     "FaqDocuments": dataset
 }
 
-with open('../dataset/allianz-travel-faq-' + lang + '-kendra.json', 'w') as f:
+with open('../dataset/allianz-ch-travel-faq-' + lang + '-kendra.json', 'w') as f:
     json.dump(jsonFile, f, indent=2)
