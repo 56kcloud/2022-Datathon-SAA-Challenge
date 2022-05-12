@@ -32,3 +32,8 @@ started working on the challenge.
 * [Q&A Bot Template](./docs/Bot-template.md)
 * [Dataset](./docs/Dataset.md)
 * [Evaluation](./docs/Evaluation.md)
+
+## Involved Parties
+[<img src="./docs/images/saa-logo.svg" width=250>](https://www.actuaries.ch)&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="./docs/images/56k.cloud-logo.png" width=150>](https://56k.cloud)&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="./docs/images/ace-logo.png" width=100>](https://analytics-club.org)
