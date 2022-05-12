@@ -1,20 +1,39 @@
 # Setup Slack
-To test the default Q&A Bot implementation, you can use the [Amazon Lex
-integration with
+Amazon Lex provides an API that can be used to link any application or service
+to the bot. Besides that, it also provides predefined integrations into chat and
+messaging services. This template uses the [Amazon Lex integration with
 Slack](https://docs.aws.amazon.com/lex/latest/dg/slack-bot-association.html).
 
-In contrast to the previous to sections, you are linked to existing
-documentations for the single steps. However, you will find some additional
-pointers, to clarify the steps you need to perform.
+The following steps are adopted from the [Integrating an Amazon Lex Bot with
+Slack](https://docs.aws.amazon.com/lex/latest/dg/slack-bot-association.html)
+documentation. However, as this documentation is outdated, we describe the steps
+here.
 
 In order to setup the Slack integration you have to do the following steps:
-1. [Create a Slack
-Workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
-   or use an existing if you already have one
-1. [Create a Slack Application](https://docs.aws.amazon.com/lex/latest/dg/slack-bot-assoc-create-app.html)
+1. Create a Slack Workspace or use an existing if you already have one
+   * [Create Workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
+   * [Invite new members](https://slack.com/help/articles/201330256-Invite-new-members-to-your-workspace-Invite-new-members-to-your-workspace-Invite-new-members-to-your-workspace)
+
+1. Create a Slack Application
+   * [Sign in](http://api.slack.com) to the Slack API Console
+   * Click on **Create an app**
    * On the **Create an app** popup, select *From scratch*
-   * Select the **Slack Workspace** you have just created
-1. [Integrate the Slack Application with the Amazon Lex Bot](https://docs.aws.amazon.com/lex/latest/dg/slack-bot-assoc-create-assoc.html)
+   * Select the **Slack Workspace** you want the app to be installed in
+
+2. Configure the Slack application
+   * Go to **Interactivity & Shortcuts** on the left menu
+     * Activate the **Interactivity** toggle
+     * In the **Request URL** add `https://slack.com`
+
+       **NOTE:** This will later be changed to the URL of the Amazon Lex Bot
+     * Click *Save Changes* on the bottom
+   * Go to **Basic Information** on the left menu
+     * Save the following information
+       * Client ID
+       * Client Secret
+       * Verification token
+
+1. Add a **channel** to integrate the Slack Application with the Amazon Lex Bot
    * Go to the AWS Console and open the Lex Bot you created in the previous step
    * Select **Channel integrations** from the menu on the left
    * Click **Add channel**
@@ -25,12 +44,42 @@ Workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
      * Select *TestBotAlias* as a **Alias**
      * Select *English (US)* as the **Language**
    * Additional configuration section
-     * Copy the information from the Slack app into the corresponding fields
+     * Copy-and-Paste the *Client ID*, *Client Secret* and *Verification token*
+       from the previous step
+   * Click **Create*
+   * Save the following information from the **Callback URL** section
+     * *Endpoint*
+     * *OAuth endpoint*
 
-1. [Complete Slack Integration](https://docs.aws.amazon.com/lex/latest/dg/slack-bot-back-in-slack-console.html)
-1. [Test the Integration](https://docs.aws.amazon.com/lex/latest/dg/slack-bot-test.html)
-   * To test the Slack integration you can send the same messages you tested
-     before
+1. Finish setting up the Slack Application
+   * Go back to the Slack App Web-UI
+   * Go to **OAuth & Permissions** on the left menu
+     * In the **Redirect URLs** section, add the *OAuth endpoint* you copied in
+       the last step
+     * In the **Scopes** section, add the following scopes:
+       * `chat:write`
+       * `team:read`
+   * Go to **Interactivity & Shortcuts** on the left menu
+     * Update the **Request URL** with the *Endpoint* you copied in the last
+       step
+     * Click *Save Changes* on the bottom
+   * Go to **Event Subscriptions** on the left menu
+     * Enable the feature
+     * Add the *Endpoint* you copied to the **Request URL**
+     * In the **Subscribe to bot events** add the following Bot User Events:
+       * `message.im`
+     * Click *Save Changes* on the bottom
+   * Go to **App Home** on the left menu
+     * Activate *Allow users to send Slash commands and messages from the
+       messages tab*
+   * Go to **Manage Distribution** on the left menu
+     * Click on **Add to Slack**
+
+1. Test the Integration
+   * After the previous step the bot is available in your Slack workspace
+   * You can interact with the bot via **Direct messages**. If you don't see the
+     bot in the Direct messages section, you can add it with the '+' sign
+   * Send the following messages, to test the integration
      * Hello Data Days 2022
      * Travel Hotline
 

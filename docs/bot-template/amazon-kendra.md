@@ -1,15 +1,16 @@
 # Setup Amazon Kendra
 [Amazon Kendra](https://aws.amazon.com/kendra/) is an intelligent search service
-powered by Machine Learning (ML). In this template implementation we use the
-Kendra FAQ feature. This allows us to search the Allianz Travel FAQs.
+powered by Machine Learning (ML). In this template implementation you will be
+using the Kendra FAQ feature. This allows you, to execute simple searches on the
+provided FAQ dataset.
 
-You can find more information about Kendra in the
+You can find more information about Amazon Kendra in the
 [documentation](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html).
 
 ## Setup
 
 ### Create S3 Bucket
-To upload the FAQs into Kendra, you need to upload them to an S3 bucket. This
+In order add the FAQs to Kendra, you need to upload them to an S3 bucket. This
 can be done with the following steps:
 1. Go to the [Amazon S3 Service Console](https://s3.console.aws.amazon.com/s3/buckets?region=eu-west-1)
 1. Create a new Bucket
@@ -22,7 +23,7 @@ can be done with the following steps:
    * Upload the `.json` files from the `dataset` folder
 
 ### Create the Kendra Index
-After uploading the FAQ datasets, we need to create the Amazon Kendra Service.
+After uploading the FAQ datasets, you need to create the Amazon Kendra Service.
 1. Go to the [Amazon Kendra Service
    Console](https://eu-west-1.console.aws.amazon.com/kendra/home?region=eu-west-1#indexes)
 1. Create a new index
@@ -35,30 +36,33 @@ last step
 After the successful creation of the index, you get redirected to the index home
 page.
 
-TODO: Make a better transition here
-
 The last step on the Kendra configuration is then to add the FAQs. You
 have to repeat this step for both datasets:
 * `allianz-ch-travel-faq-de-kendra.json`
 * `allianz-ch-travel-faq-en-kendra.json`
 
+**NOTE:** FAQs are not handled as *Data sources* in Kendra. There is a separate
+menu item on the left, where you can upload and manage the FAQs.
+
 While adding the FAQ please make sure to select the correct language for the
 file you have selected.
 1. Click on the **FAQs** menu link on the left side
 1. Select **Add FAQ**
-   * Give it a **FAQ name**. Prepend it with *-en* (or something similar), as
-     you also have to add another language
-  * Select the **Default Language** (e.g. *English (en)*)
-  * The **FAQ file format** is *JSON file*
-  * **Browse S3** and select the dataset matching the language you selected
-    above
-  * Create a new **IAM role**
-1. Click **Add** and wait until you get redirected to the FAQ overview page
+   * Give it a **FAQ name**.
 
-Creating the FAQs can take some time. You don't have to wait until they are
-*Active* and can proceed to the next step.
+     Prepend it with *-en* (or something similar), as you also have to add
+     another language
+   * Select the **Default Language** (e.g. *English (en)*) to match the file
+   * The **FAQ file format** is *JSON file*
+   * **Browse S3** and select the dataset matching the language you selected
+    above
+   * Create a new **IAM role**
+1. Click **Add** and wait until you get redirected to the FAQ page
+
+Creating and indexing the FAQs can take some time. You don't have to wait until
+they are *Active* and can proceed to the next step.
 
 ## Next Step: Create Amazon Lex Bot
-Now that we have the FAQs indexed in Amazon Kendra, we need to create the Amazon
-Lex Bot and connect it to the FAQs. You will find the steps in the [Amazon
-Lex section](./amazon-lex.md).
+Now that you have added the FAQs to Amazon Kendra, your next step is to create
+the Amazon Lex Bot and connect it to the FAQs. You will find the instructions
+for this in the [Amazon Lex section](./amazon-lex.md).
