@@ -24,14 +24,14 @@ for e in soup.find_all("div", class_="c-accordion__item-wrapper"):
     if len(answer_div) == 0:
         answer_div = e.find_all("div", class_="c-accordion__item-text")
 
-    quesiton = question_span[0].get_text()
+    question = question_span[0].get_text()
     answer = answer_div[0].get_text()
 
-    quesiton = quesiton.strip()
+    question = question.strip()
     answer = answer.strip()
 
     dataset.append({
-        "Question": quesiton,
+        "Question": question,
         "Answer": answer
     })
 
@@ -40,5 +40,8 @@ jsonFile = {
     "FaqDocuments": dataset
 }
 
-with open('../dataset/allianz-ch-travel-faq-' + lang + '-kendra.json', 'w') as f:
+with open("../dataset/allianz-ch-travel-faq-" + lang + "-kendra.json", "w") as f:
     json.dump(jsonFile, f, indent=2)
+
+with open("../dataset/Frequently asked questions - Allianz Travel Switzerland - " + lang + ".html", "w") as f:
+    f.write(soup.prettify())
