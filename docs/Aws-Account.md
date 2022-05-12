@@ -5,6 +5,9 @@ To work on the challenge each team needs to have **one** AWS Account.
 You can sign up for a new AWS account
 [here](https://portal.aws.amazon.com/billing/signup).
 
+During the account creation, you are asked to select a support tier. Please
+select the **Basic Support**.
+
 ## Create IAM Users
 With the email address, you get access to the root user of the account. This
 user has the highest privileges in the account, and should only be used for
@@ -13,11 +16,15 @@ IAM Users should be used (if not specified otherwise).
 
 To create IAM users go to the [Identity and Access Management
 (IAM)](https://us-east-1.console.aws.amazon.com/iamv2) service. On the users
-page, you can create new IAM user. You need to create one user for each of your
+page, you can create new IAM users. You need to create one user for each of your
 teammates and also one user for you.
 
+1. Select the **Users** menu point on the left
+1. Click **Add users**
 1. Set user details
-   * User name
+   * Specify the **User name**
+
+     **NOTE:** You can create all the users at once, by clicking on **Add another user**
    * For **Select AWS credential type** select both
      * ✅ Access key - Programmatic access
 
@@ -34,11 +41,15 @@ teammates and also one user for you.
      to all the services.
 
 For this challenge, you don't need to create any tags. After double checking
-that all the information is correct, you can then proceed to create the user and
-distributed the credentials to your teammate.
+that all the information is correct, you can then proceed to create the users.
+
+After the successful creation, you get redirected to the last page of the
+wizard. On this page, you can download the csv file with the credentials.
+Distribute this file to your teammates.
 
 ## Redeem Credits
-For the challenge, AWS sponsored credits for each of the teams. You receive the code from the SAA team onsite.
+For the challenge, AWS sponsored credits for each of the teams. You receive the
+code from the SAA team onsite.
 
 **NOTE:** This task needs to be executed as the root user of the AWS Account.
 
@@ -46,6 +57,7 @@ After you created the account, you can redeem the in the [Billing Service ->
 Credits](https://us-east-1.console.aws.amazon.com/billing/home?region=eu-west-1#/credits).
 
 ## Enable AWS Single Sign-on (SSO)
+TODO test this
 In order to use Kendra Experiences, you need to enable AWS SSO
 * Log in as your Root User
 * Enable SSO in the EU (Ireland) | eu-west-1 Region
