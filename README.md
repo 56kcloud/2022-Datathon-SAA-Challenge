@@ -23,27 +23,12 @@ this business problem. This challenge from the Swiss Association of Actuaries
 more transparent? Do you want to have more convenient travel planning? Then sign
 up for the SAA Q&A Bot Challenge.
 
-## Repository Structure
-The structure of this repository is as follows:
-## **docs** folder
-This folder contains the documentation and instructions on how to get started
-with the challenge
+## Getting started
+The following sections give you all the needed information that is needed to get
+started working on the challenge.
 
 * [Challenge Description](./docs/Challenge-description.md)
 * [AWS Account Creation](./docs/Aws-Account.md)
 * [Q&A Bot Template](./docs/Bot-template.md)
-
-## **dataset** folder
-The Q&A Bot Template implementation is built upon the [Allianz Travel
-FAQ](https://www.allianz-travel.ch/en_CH/services/faq.html). In the dataset
-folder you will find the english and german version of the dataset. Both in a
-`json` version that is compatible with the Amazon Kendra FAQ model. And the
-prettified html version.
-
-TODO: Add german html
-
-## **scripts** folder
-Contains helper scripts that were used to extract the dataset from the website.
-
-## **kendrasamples-react-app**
-TODO: will this stay here???
+* [Dataset](./docs/Dataset.md)
+* [Evaluation](./docs/Evaluation.md)
