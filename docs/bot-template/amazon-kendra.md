@@ -38,8 +38,8 @@ page.
 
 The last step on the Kendra configuration is then to add the FAQs. You
 have to repeat this step for both datasets:
-* `allianz-ch-travel-faq-de-kendra.json`
-* `allianz-ch-travel-faq-en-kendra.json`
+* `COVID-19 FAQs | Allianz Global Assistance.json`
+* `Travel Insurance FAQs | Allianz Global Assistance.json`
 
 **NOTE:** FAQs are not handled as *Data sources* in Kendra. There is a separate
 menu item on the left, where you can upload and manage the FAQs.

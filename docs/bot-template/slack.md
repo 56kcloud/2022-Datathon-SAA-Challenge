@@ -81,6 +81,6 @@ In order to setup the Slack integration you have to do the following steps:
      bot in the Direct messages section, you can add it with the '+' sign
    * Send the following messages, to test the integration
      * Hello Data Days 2022
-     * Travel Hotline
+     * Why do I need travel protection?
 
 You have now successfully setup the Q&A Bot Template. Congrats 🚀

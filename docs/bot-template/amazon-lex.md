@@ -69,7 +69,7 @@ FAQs in Kendra have the correct language.
 1. Click on **Build** on the bottom
 1. *Optional:* After the build succeeded, you can test the bot with the **Test**
    button on the bottom
-   * Sent *Travel Hotline* to the bot
+   * Sent *Why do I need travel protection?* to the bot
 
 Now you have successfully created an Amazon Lex bot and connected it to the
 a Kendra index.
