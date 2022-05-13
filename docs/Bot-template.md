@@ -6,11 +6,11 @@ instructions to setup a basic end-to-end implementation of a Q&A bot below.
 When you have finished these steps, you will be able to chat with a bot and ask
 it some basic questions.
 
-The Q&A Bot Template that you will deploy, consists of three components:
-* A Slack Workspace
-* Amazon Lex
-* Amazon Kendra
-  * Amazon S3 to store the FAQ datasets
+The Q&A Bot Template that you will deploy, consists of the following components:
+* A Slack Workspace - to interact with the bot
+* Amazon Lex - the AWS service to create conversational interfaces
+* Amazon Kendra - an intelligent search service
+* Amazon S3 - to store the FAQ datasets
 
 ![Template Architecture](./images/template-architecture.png)
 
