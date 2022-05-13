@@ -57,8 +57,28 @@ After you created the account, you can redeem the in the [Billing Service ->
 Credits](https://us-east-1.console.aws.amazon.com/billing/home?region=eu-west-1#/credits).
 
 ## Enable AWS Single Sign-on (SSO)
-TODO test this
-In order to use Kendra Experiences, you need to enable AWS SSO
+In order to use Kendra Experiences, you need to enable AWS SSO and create SSO
+Users. If you plan on using the Kendra Experiences feature, you need to execute
+the following steps.
+
+### Enable AWS SSO
 * Log in as your Root User
 * Enable SSO in the EU (Ireland) | eu-west-1 Region
   https://eu-west-1.console.aws.amazon.com/singlesignon/identity/home
+
+### Create Group and Users
+You can create the SSO Group and Users with any of the previously created users.
+1. Select **Groups** from the left menu
+   * Create the *Group* with a name of your choice
+1. After the Group is created you can create the users
+1. Select **Users** from the left menu
+   * Give it a name
+   * Select *Send an email to the user with password setup instructions.*
+   * Enter valid Email address
+   * Specify First and Last name
+   * Add the user to the previously created group
+1. Go to your Email client
+1. *Accept the Invitation** and specify a password for the user
+
+After that, the user can be selected while configuring the Kendra Experiences
+feature.
