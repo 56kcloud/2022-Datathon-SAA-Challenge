@@ -20,7 +20,7 @@ can be done with the following steps:
 1. Upload the FAQ datasets
    * Go to the newly created bucket
    * Click on the **Upload** Button
-   * Upload the `.json` files from the `dataset` folder
+   * Upload the `.json` files from the [dataset](./../../dataset/) folder
 
 ### Create the Kendra Index
 After uploading the FAQ datasets, you need to create the Amazon Kendra Service.

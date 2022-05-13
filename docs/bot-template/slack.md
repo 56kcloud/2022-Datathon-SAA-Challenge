@@ -18,7 +18,9 @@ In order to setup the Slack integration you have to do the following steps:
    * [Sign in](http://api.slack.com) to the Slack API Console
    * Click on **Create an app**
    * On the **Create an app** popup, select *From scratch*
-   * Select the **Slack Workspace** you want the app to be installed in
+   * Give it an **App Name**
+   * Select the **Slack Workspace** you want the app to be installed in (e.g.
+     the previously created workspace)
 
 2. Configure the Slack application
    * Go to **Interactivity & Shortcuts** on the left menu
@@ -28,13 +30,15 @@ In order to setup the Slack integration you have to do the following steps:
        **NOTE:** This will later be changed to the URL of the Amazon Lex Bot
      * Click *Save Changes* on the bottom
    * Go to **Basic Information** on the left menu
-     * Save the following information
+     * Make a note with the following information
        * Client ID
        * Client Secret
        * Verification token
 
 1. Add a **channel** to integrate the Slack Application with the Amazon Lex Bot
-   * Go to the AWS Console and open the Lex Bot you created in the previous step
+   * Go to the [Amazon Lex AWS
+   * Console](https://eu-west-1.console.aws.amazon.com/lexv2/home#bots) and open
+     the Lex Bot you created in the previous step
    * Select **Channel integrations** from the menu on the left
    * Click **Add channel**
    * Platform section
@@ -46,19 +50,23 @@ In order to setup the Slack integration you have to do the following steps:
    * Additional configuration section
      * Copy-and-Paste the *Client ID*, *Client Secret* and *Verification token*
        from the previous step
-   * Click **Create*
+   * Click *Create*
    * Save the following information from the **Callback URL** section
      * *Endpoint*
      * *OAuth endpoint*
 
 1. Finish setting up the Slack Application
-   * Go back to the Slack App Web-UI
+   * Go back to the [Slack App Web-UI](https://api.slack.com/apps)
+   * Select the app you created before
    * Go to **OAuth & Permissions** on the left menu
      * In the **Redirect URLs** section, add the *OAuth endpoint* you copied in
        the last step
-     * In the **Scopes** section, add the following scopes:
+     * Click on *Save URLs*
+     * In the **Scopes** section, add the following scopes to the **Bot Token
+       Scopes** by clicking on *Add an OAuth Scope*:
        * `chat:write`
        * `team:read`
+     * These changes are saved automatically
    * Go to **Interactivity & Shortcuts** on the left menu
      * Update the **Request URL** with the *Endpoint* you copied in the last
        step
@@ -74,6 +82,8 @@ In order to setup the Slack integration you have to do the following steps:
        messages tab*
    * Go to **Manage Distribution** on the left menu
      * Click on **Add to Slack**
+     * You are asked to give the app permissions to access the workspace. Click
+       on *Allow*
 
 1. Test the Integration
    * After the previous step the bot is available in your Slack workspace
