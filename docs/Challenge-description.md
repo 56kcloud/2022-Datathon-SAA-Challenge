@@ -27,7 +27,3 @@ Together with your team members, you will
 1. 60’ intro session in AWS Q&A Bot technologies
 1. Mentors and experts assisting you in AWS Q&A Bot technologies
 1. Real-world written FAQs [dataset](./Dataset.md)
-
-### Additional Resources
-1. [Federal Office of Public Health
-information](https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html)
