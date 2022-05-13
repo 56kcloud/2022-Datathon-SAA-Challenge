@@ -5,6 +5,11 @@ You use it in this deployment to make the FAQs available via chat.
 You can find more information about Amazon Lex in the
 [documentation](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html).
 
+To get familiar with the core concepts and terminology of Amazon Lex, you can
+read the [How it
+works](https://docs.aws.amazon.com/lexv2/latest/dg/how-it-works.html) section of
+the documentation.
+
 ## Setup
 The first step is to head over to the [Amazon Lex Console
 Service](https://eu-west-1.console.aws.amazon.com/lexv2/home?region=eu-west-1#bots).
