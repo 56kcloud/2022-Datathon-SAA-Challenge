@@ -22,4 +22,4 @@ Terms and
 Conditions](https://www.allianz-travel.ch/en_CH/services/download-center.html).
 With these you should be able to further enhance the capabilities of your bot.
 
-TODO: download the Terms and Conditions to the dataset folder
+As a backup solution, you can find the downloaded Terms and Conditions also in the dataset folder [here](./../dataset/terms-and-conditions/).
